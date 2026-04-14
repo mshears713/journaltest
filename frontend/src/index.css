@@ -1,0 +1,42 @@
+/* ── Reset & base ──────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg:        #f4f6fb;
+  --color-surface:   #ffffff;
+  --color-primary:   #4f6ef7;
+  --color-primary-h: #3a58e2;
+  --color-danger:    #e74c3c;
+  --color-danger-h:  #c0392b;
+  --color-success:   #27ae60;
+  --color-warning:   #e67e22;
+  --color-text:      #1e2433;
+  --color-muted:     #6b7280;
+  --color-border:    #dde1ea;
+  --radius:          8px;
+  --shadow-sm:       0 1px 3px rgba(0,0,0,.08);
+  --shadow-md:       0 4px 12px rgba(0,0,0,.10);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+body {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+/* ── Utility ───────────────────────────────────────────────── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}

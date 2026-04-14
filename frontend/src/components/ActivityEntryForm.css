@@ -1,0 +1,98 @@
+.entry-form {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 1.75rem 2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.entry-form__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: var(--color-text);
+}
+
+.entry-form__field {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.entry-form__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-muted);
+}
+
+.entry-form__textarea,
+.entry-form__input {
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.8rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--color-text);
+  background: var(--color-bg);
+  transition: border-color 0.15s, box-shadow 0.15s;
+  resize: vertical;
+  width: 100%;
+}
+
+.entry-form__textarea:focus,
+.entry-form__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(79, 110, 247, 0.15);
+}
+
+.entry-form__textarea--error,
+.entry-form__input--error {
+  border-color: var(--color-danger);
+}
+
+.entry-form__error {
+  font-size: 0.8rem;
+  color: var(--color-danger);
+  font-weight: 500;
+}
+
+.entry-form__char-count {
+  font-size: 0.75rem;
+  color: var(--color-muted);
+  text-align: right;
+}
+
+.entry-form__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.55rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  transition: background 0.15s, transform 0.1s, opacity 0.15s;
+}
+
+.btn:active { transform: scale(0.97); }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.btn--primary { background: var(--color-primary); color: #fff; }
+.btn--primary:hover:not(:disabled) { background: var(--color-primary-h); }
+
+.btn--ghost { background: transparent; color: var(--color-muted); border: 1.5px solid var(--color-border); }
+.btn--ghost:hover { background: var(--color-bg); color: var(--color-text); }
+
+.btn--danger { background: transparent; color: var(--color-danger); border: 1.5px solid var(--color-danger); }
+.btn--danger:hover { background: var(--color-danger); color: #fff; }
+
+.btn--icon { padding: 0.3rem 0.6rem; font-size: 1rem; line-height: 1; background: transparent; border: none; cursor: pointer; border-radius: var(--radius); transition: background 0.15s; }
+.btn--icon:hover { background: var(--color-bg); }

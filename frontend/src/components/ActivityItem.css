@@ -1,0 +1,11 @@
+.activity-item { display: flex; align-items: flex-start; gap: 1rem; background: var(--color-surface); border: 1.5px solid var(--color-border); border-radius: var(--radius); padding: 1rem 1.25rem; transition: box-shadow 0.15s; list-style: none; }
+.activity-item:hover { box-shadow: var(--shadow-sm); }
+.activity-item--editing { padding: 0; border: none; background: transparent; }
+.activity-item--editing .entry-form { margin-bottom: 0; width: 100%; max-width: 100%; }
+.activity-item__body { flex: 1; min-width: 0; }
+.activity-item__description { font-size: 0.95rem; line-height: 1.5; word-break: break-word; margin-bottom: 0.3rem; }
+.activity-item__timestamp { font-size: 0.78rem; color: var(--color-muted); display: block; }
+.activity-item__controls { display: flex; align-items: center; gap: 0.25rem; flex-shrink: 0; }
+.activity-item__confirm { display: flex; align-items: center; gap: 0.35rem; }
+.activity-item__confirm-text { font-size: 0.82rem; color: var(--color-danger); font-weight: 600; }
+.btn--sm { padding: 0.2rem 0.6rem; font-size: 0.78rem; }
